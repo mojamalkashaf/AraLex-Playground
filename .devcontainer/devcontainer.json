@@ -44,12 +44,17 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-toolsai.jupyter",
-				"ms-python.python"
+				"ms-python.python",
+				"amazonwebservices.amazon-q-vscode",
+				"redhat.vscode-xml"
 			]
 		}
 	},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
-	"remoteUser": "vscode"
+	"remoteUser": "vscode",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {}
+	}
 }
