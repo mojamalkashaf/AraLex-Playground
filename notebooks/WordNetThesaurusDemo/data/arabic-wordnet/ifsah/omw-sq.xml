@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.0.dtd">
+<LexicalResource xmlns:dc="https://globalwordnet.github.io/schemas/dc/">
+    <!-- The first three lines must always be as above -->
+
+    <!-- A file may contain multiple WordNets in different languages:
+         The following information is required:
+            id: A short name for the resource
+            label: The full name for the resources
+            language: Please follow BCP-47, i.e., use a two-letter code if 
+                      available else a three-letter code
+            email: Please give a contact email address
+            license: The license of your resource (please provide URL)
+            version: A string identifying this version (preferably follow 
+                     major.minor format)
+            url: A URL for your project homepage
+            citation: The paper to cite for this resource
+         Extra properties may be included from Dublin core and in addition
+            status: The status of the resource, e.g., "valid", "checked", "unchecked"
+            confidenceScore: A numeric value between 0 and 1 giving the 
+                             confidence in the correctness of the element.                             
+    -->
+    <Lexicon
+            id="ifsah-ar"
+            label="الإفصاح في فقه اللغة"
+            language="ar"
+            email="your.email@example.com"
+            license="https://creativecommons.org/publicdomain/zero/1.0/"
+            version="1.0"
+            citation="CILI: the Collaborative Interlingual Index. Francis Bond, Piek Vossen, John P. McCrae and Christiane Fellbaum, Proceedings of the Global WordNet Conference 2016, (2016)."
+            url="http://example.com"
+            dc:publisher="Your Publisher">
+        <LexicalEntry id="w1" >
+            <Lemma
+                    writtenForm="الحَمْل"
+                    partOfSpeech="n" />
+            <Sense
+                    id="w1-n-1"
+                    synset="w1-n">
+            </Sense>
+        </LexicalEntry>
+        <Synset
+                id="example-en-10161911-n"
+                ili=""
+                partOfSpeech="n"
+                members="example-en-10161911-n-1">
+            <Definition>ما يُحمل في البطون من الأولاد في جميع الحيوان ، حَملت المرأة ولدها ، وبولدها تحمِل حَمْلا : حبِلَت ، فهي حامل ، إن أريد الوصف الحقيقي ، وربما قيل حاملة .</Definition>
+            <SynsetRelation
+                    relType="hypernym"
+                    target="example-ar-201-n" />
+        </Synset>
+        <Synset
+                id="example-ar-201-n"
+                ili=""
+                partOfSpeech="n"
+                members="example-en-10161911-n">
+            <Definition>الحمل وتدرجه: يشمل جميع مراحل الحمل والتغيرات التي تحدث خلال فترة الحمل.</Definition>
+            <SynsetRelation
+                    relType="hypernym"
+                    target="example-ar-202-n" />
+        </Synset>
+        <Synset
+                id="example-ar-202-n"
+                ili=""
+                partOfSpeech="n">
+            <Definition>الحمل والرضاع والفطام</Definition>
+            <SynsetRelation
+                    relType="hypernym"
+                    target="example-ar-203-n" />
+        </Synset>        
+        <Synset
+                id="example-ar-203-n"
+                ili=""
+                partOfSpeech="n">
+            <Definition>في خلق الإنسان</Definition>
+        </Synset>   
+    </Lexicon>
+</LexicalResource>
